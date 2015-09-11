@@ -1,10 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+
+  <meta name="description" content="This is the MarsLab-MainPage">
+  <meta name="author" content="Naldo&WindR">
+
+  <title>MarsLab-MainPage</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/theme.css" rel="stylesheet">
+  <link href="../css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/zocial.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/settings.css" rel="stylesheet" type="text/css"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+
+  <script language="javascript">
+    $(function () {
+      var oItem = document.getElementById('item');
+      var oSpan = oItem.getElementsByTagName('span')[0];
+      var oUl = oItem.getElementsByTagName('ul')[0];
+      var aLi = oUl.getElementsByTagName('li');
+      oItem.onmouseover = function () {
+        oUl.style.display = 'block';
+        for (var i = 0; i < aLi.length; i++) {
+          aLi[i].index = i;
+          aLi[i].onmouseover = function () {
+            this.style.background = '#C8E1EA';
+            if (this.index != aLi.length - 1) {
+              this.style.color = '#ff3300';
+            }
+          }
+          aLi[i].onmouseout = function () {
+            this.style.background = 'none';
+            this.style.color = '';
+          }
+          aLi[i].onclick = function () {
+            if (this.index != aLi.length) {
+              oSpan.innerHTML = this.innerHTML;
+              oUl.style.display = 'none';
+              var idstr = $(this).attr("id");
+              var id = idstr.substring(5);
+              $("#mId").val(id);
+            }
+          }
+        }
+      }
+      oItem.onmouseout = function () {
+        oUl.style.display = 'none';
+      }
+
+      var scrtime;
+      $(".comList").hover(function () {
+        clearInterval(scrtime);
+      }, function () {
+        scrtime = setInterval(function () {
+          var $ul = $(".comList");
+          var liHeight = $ul.find("li:last").height();
+          $ul.animate({ marginTop: liHeight + 20 + "px" }, 1000, function () {
+            $ul.find("li:last").prependTo($ul);
+            $ul.find("li:first").hide();
+            $ul.css({ marginTop: 0 });
+            $ul.find("li:first").fadeIn(1000);
+          });
+        }, 3000);
+      }).trigger("mouseleave");
+    })
+
+    function checkval() {
+      if ($("input[name='q']").val() == "请输入关键词") {
+        alert("请输入关键词!");
+        $("input[name='q']").focus();
+        return false;
+      }
+      return true;
+    }
+  </script>
+
 </head>
 <body>
+<!--header-->
+<div class="header">
+  <div class="container">
+    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fa fa-bars"></i></button>
+    <div class="logo">
+      <a href="../pages/MainPage.html"><img src="../img/logo.png" class="animated bounceInDown"/></a>
+    </div>
+  </div>
+</div>
 
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
