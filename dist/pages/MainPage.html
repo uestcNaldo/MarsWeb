@@ -10,8 +10,9 @@
 
   <title>MarsLab-MainPage</title>
   <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/indexTheme.css" rel="stylesheet">
   <link href="../css/font-awesome.min.css" rel="stylesheet">
-  <link href="../css/theme.css" rel="stylesheet">
+
   <link href="../css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
   <link href="../css/zocial.css" rel="stylesheet" type="text/css"/>
   <link href="../css/settings.css" rel="stylesheet" type="text/css"/>
@@ -88,30 +89,29 @@
 </head>
 <body>
 <!--header-->
-<div class="header">
-  <div class="container">
-    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fa fa-bars"></i></button>
-    <div class="logo">
-      <a href="../pages/MainPage.html"><img src="../img/logo.png" class="animated bounceInDown"/></a>
-    </div>
-    <nav id="main_menu">
-      <div class="collapse">
-        <ul class="nav nav-pills">
 
-          <li class="dropdown active"><a href="javascript:{}">Home</a>
-            <ul class="dropdown-menu">
-
-            </ul>
-          </li>
-
-          <li class="dropdown"><a href="javascript:{}">Pages</a>
-
-          </li>
-        </ul>
+  <nav class="navbar navbar-head navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mars-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="MainPage.html"><img alt="Brand" src="../img/logo.png"></a>
       </div>
-    </nav>
-  </div>
-</div>
+      <div class="collapse navbar-collapse" id="mars-navbar-collapse">
+        <ul class="nav navbar-nav nav-pills">
+          <li class="active"><a href="MainPage.html">HOME</a></li>
+          <li><a href="MainPage.html">WORKS</a></li>
+          <li><a href="MainPage.html">PROPLE</a></li>
+          <li><a href="MainPage.html">ABOUT</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
 
 
 <script src="../js/jquery.min.js"></script>
