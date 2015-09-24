@@ -1,5 +1,5 @@
 body {
-  margin:0; padding:0;
+  padding:77px 0;
   font:13px/22px 'Lato', sans-serif;
   color:#555;
   background: #f0f0f0;
@@ -11,7 +11,7 @@ nav {background: #323A45;}
 .navbar-head {
   padding-top: 15px;
   margin: 0 auto;
-  height: 80px;
+  height: 77px;
 
 }
 
@@ -26,14 +26,14 @@ nav {background: #323A45;}
   position: relative;
   padding: 0 0;
   display: inline-block;
-
 }
 
 .nav-pills > li > a {
-  font-weight: 400;
+  font-weight: 500;
   color: #bbb;
-  letter-spacing: 4px;
-  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: Arial, serif;
+  font-size: 17px;
   display: inline-block;
   padding:24px 22px 22px 25px;
   text-align: center!important;
@@ -45,5 +45,30 @@ nav {background: #323A45;}
   color:#FFF;
   webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 4px 4px;
+}
+.nav-pills > li > ul {
+  padding: 0 0;
+}
+
+.nav-pills > li > ul > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nav-pills > li > ul > li > a {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  color: #000000;
+  padding:10px 10px 10px 10px;
+  text-align: left;
+}
+
+
+
+
+footer {
+  text-align: center;
+  background: #2980B9;
+  padding: 8px 0;
+  color: #FFFFFF;
 }

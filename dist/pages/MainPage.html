@@ -9,8 +9,9 @@
   <meta name="author" content="Naldo&WindR">
 
   <title>MarsLab-MainPage</title>
-  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/indexTheme.css" rel="stylesheet">
+  <link href="../css/mainPageCus.css" rel="stylesheet">
   <link href="../css/font-awesome.min.css" rel="stylesheet">
 
   <link href="../css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
@@ -42,16 +43,118 @@
       <div class="collapse navbar-collapse" id="mars-navbar-collapse">
         <ul class="nav nav-pills">
           <li class="active"><a href="MainPage.html">HOME</a></li>
-          <li><a href="MainPage.html">WORKS</a></li>
-          <li><a href="MainPage.html">PROPLE</a></li>
-          <li><a href="MainPage.html">ABOUT</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WORKS</a>
+            <ul class="dropdown-menu">
+              <li><a href="../pages/Papers.html">Papers</a></li>
+              <li><a href="../pages/Projects.html">Projects</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS</a>
+            <ul class="dropdown-menu">
+              <li><a href="../pages/News.html">News</a></li>
+            </ul>
+          </li>
+          <li><a href="../pages">SERVICE</a></li>
+          <li><a href="../pages/Team.html">TEAM</a></li>
+          <li><a href="../pages/AboutMARS.html">ABOUT</a></li>
         </ul>
-
       </div>
+
     </div>
   </nav>
 
+<!--Main Content-->
+<!---==============================-->
+<!--Carousel-->
+<div id="m_carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#m_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#m_carousel" data-slide-to="1"></li>
+    <li data-target="#m_carousel" data-slide-to="2"></li>
+  </ol>
 
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../img/slider2.jpg">
+      <div class="carousel-caption">
+        <h1>Welcome to MarsLab!</h1>
+        <p><a class="btn btn-lg btn-primary" href="../pages/Papers.html" role="button">Explore More~</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../img/slider3.jpg">
+      <div class="carousel-caption">
+        <h1>These are our Works!</h1>
+        <p><a class="btn btn-lg btn-primary" href="../pages/Projects.html" role="button">Learn More</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../img/slider4.jpg">
+      <div class="carousel-caption">
+        <h1>Mars Team is HERE</h1>
+        <p><a class="btn btn-lg btn-primary" href="../pages/Team.html" role="button">Person Show~</a></p>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#m_carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#m_carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!--Carousel End-->
+<div class="jumbotron jumCus">
+  <div class="container">
+    <h1>Hello,Friend~~</h1>
+    <p>Welcome to MarsLab of UESTC</p>
+    <p>Our Lab's is Multi-Agent and Robot System</p>
+    <p>And we are pleasure to show you our lab's situation</p>
+    <p>Here are Wonderful and surprising Works in our MarsLab</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+      <h2>These are our works overview</h2>
+      <h5>our works are mostly focused on ...</h5>
+    </div>
+    <div class="col-sm-5">
+
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <img src="../img/testPic.jpg" width="400" height="300">
+    </div>
+    <div class="col-sm-7">
+      <h2>This is Our Mentor</h2>
+      <p></p>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+<!--Footer-->
+<footer>
+  <address>
+    <h5>Address: UESTC.MARSLab No.2006,Xiyuan Road,Gaoxinxi Area,Chengdu</h5>
+  </address>
+  <h5>Contact Us: </h5>
+</footer>
+
+<!--Script-->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 </body>
