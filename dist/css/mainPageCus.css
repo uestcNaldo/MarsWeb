@@ -1,0 +1,13 @@
+.jumCus {
+  background: #dddddd;
+}
+
+.jumCus > div > p {
+  font-family: Arial, serif;
+  font-weight: 100;
+}
+hr {
+  width: 80%;
+  color: #000000;
+}
+

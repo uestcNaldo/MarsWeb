@@ -1,0 +1,28 @@
+.paper_Cus {
+  color: #dddddd;
+  background-color: #aa3d15;
+}
+
+.paper_TB > thead > tr > th {
+  font-family: Lato, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.paper_TB > tbody > tr > td {
+  font-family: Lato, sans-serif;
+  font-size: medium;
+
+}
+
+.paper_TB > tbody > tr > td > a {
+  font-family: Lato, sans-serif;
+  font-size: x-large;
+}
+ footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 100px;
+ }
